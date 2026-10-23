@@ -1,0 +1,19 @@
+void setup() {
+  //sets up pin 12 and 13 for use
+  pinMode(13,OUTPUT);
+  pinMode(12,OUTPUT);
+}
+
+void loop() {
+  //main code
+  digitalWrite(12,HIGH); //12 is on for 1 sec
+  delay(1000);//1 second here [13]
+  digitalWrite(13,LOW); //both 12 and 13 is turned off
+  digitalWrite(12,LOW);
+  delay(1000);
+  digitalWrite(12,HIGH);//12 is on for 1 sec
+  delay(1000);
+  digitalWrite(12,LOW);//12 is turned off for 1 second
+  digitalWrite(13,HIGH);//13 is turned on for:
+  delay(1000);//1 second here [13]
+}
